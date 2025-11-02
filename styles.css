@@ -1,130 +1,48 @@
 :root {
-    --main-red: #be3144;
-    --main-gray: #303841;
-    --main-lightgray: #0d2746;
-    --main-white: #f0f0f0;
-  }
-  * {
-    margin: 0;
-  }
-  
-  body {
-    font-family: sans-serif;
-    font-weight: 400;
-    line-height: 1.4;
-    color: var(--main-white);
-  }
-  .nav-container {
-    background-image: linear-gradient(62deg, #3a3d40 0%, #050505 100%);
-  }
-  
-  .navbar {
-    position:relative;
-    top: 20px;
-    left: 1em; 
-    border-radius: 14px;
-    justify-content: inherit;
-    font-size: 18px;
-    width:97%;
-    background: var(--main-red);  
-  }
+  --main-red: #be3144;
+  --main-gray: #303841;
+  --main-lightgray: #0d2746;
+  --main-white: #f0f0f0;
+}
+* {
+  margin: 0;
+}
 
-  .nav-list{
-    display: flex;
-    li {
-      list-style-type: none;
-    }
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--main-white);
+}
+.nav-container {
+  background-image: linear-gradient(62deg, #3a3d40 0%, #050505 100%);
+}
+
+.navbar {
+  position: relative;
+  top: 20px;
+  left: 1em;
+  border-radius: 14px;
+  justify-content: inherit;
+  font-size: 18px;
+  width: 97%;
+  background: var(--main-red);
+}
+
+.nav-list {
+  display: flex;
+  li {
+    list-style-type: none;
   }
+}
 
-  .nav-list li > a {
-    color: inherit;
-    text-decoration: none;
-    padding: 10px;
-  }
+.nav-list li > a {
+  color: inherit;
+  text-decoration: none;
+  padding: 10px;
+}
 
-  .welcome-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 100vh;
-    background-color: #000;
-    background-image: linear-gradient(90deg, #3a3d40 0%, #050505 100%);
-
-    h1 {
-      font-family: "Press Start 2P", serif;
-      font-style: normal;
-      font-weight: 400;
-      text-align: center;
-      font-size: 4rem;
-      
-    }
-  }
-
-  .welcome-section > p {
-    font-family: "Press Start 2P", serif;
-    font-size: 1.5rem;
-    color: var(--main-red);
-    font-style: italic;
-    font-weight: 200;
-    text-align: center;
-  }
-
-  .projects {
-    font-family: "Lora", serif;
-    text-align: center;
-    padding: 4rem 1rem;
-    background-color: #000;
-    background-image: linear-gradient(270deg, #3a3d40 0%, #050505 100%);
-
-    h2 {
-      font-family: "Lora", serif;
-      font-weight: 700;
-      text-align: center;
-    } 
-  }
-
-  .project-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-content: center;
-    grid-gap: 3rem;
-    margin-left: 80px;
-    margin-right: 80px;
-    padding: 4rem 0;
-    
-  }
-  .project-box {
-    /* background-color: #46484b; */
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-decoration: none;
-    border-radius: 14px;
-    border:#030303;
-    border-width: 3px;
-    border-style:ridge;
-    box-shadow: 0 0 0 2px #717272;
-    height: fit-content; 
-   
-    min-height: 250px;
-    
-    p {
-      padding: 15px;
-      color: var(--main-white); 
-    }
-    p:hover{
-      color: #fabec5; 
-    }
-  }
-  
- .project-image {
-  height: calc(100% - 6.8rem);
-  width: 100%;
-  border-radius: 6px;
- }
-
- .footer-section {
+.welcome-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -133,6 +51,85 @@
   background-color: #000;
   background-image: linear-gradient(90deg, #3a3d40 0%, #050505 100%);
 
+  h1 {
+    font-family: "Press Start 2P", serif;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    font-size: 4rem;
+  }
+}
+
+.welcome-section > p {
+  font-family: "Press Start 2P", serif;
+  font-size: 1.5rem;
+  color: var(--main-red);
+  font-style: italic;
+  font-weight: 200;
+  text-align: center;
+}
+
+.projects {
+  font-family: "Lora", serif;
+  text-align: center;
+  padding: 4rem 1rem;
+  background-color: #000;
+  background-image: linear-gradient(270deg, #3a3d40 0%, #050505 100%);
+
+  h2 {
+    font-family: "Lora", serif;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  grid-gap: 3rem;
+  margin-left: 80px;
+  margin-right: 80px;
+  padding: 4rem 0;
+}
+.project-box {
+  /* background-color: #46484b; */
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  border-radius: 14px;
+  border: #030303;
+  border-width: 3px;
+  border-style: ridge;
+  box-shadow: 0 0 0 2px #717272;
+  height: fit-content;
+
+  min-height: 250px;
+
+  p {
+    padding: 15px;
+    color: var(--main-white);
+  }
+  p:hover {
+    color: #fabec5;
+  }
+}
+
+.project-image {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  border-radius: 6px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-image: linear-gradient(90deg, #3a3d40 0%, #050505 100%);
 
   h2 {
     font-family: "Press Start 2P", serif;
@@ -140,23 +137,21 @@
     font-weight: 250;
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 1rem; 
-  } 
+    margin-bottom: 1rem;
+  }
 }
-
 
 .icon {
   display: flex;
   flex-direction: row;
   overflow: hidden;
-  
+
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .hexagon-wrapper {
-  
   display: flex;
   text-align: initial;
   width: 130px;
@@ -217,7 +212,6 @@
   transition: 0.5s;
 }
 
-
 /* .connection {
   display: flex;
   flex-direction: column-reverse;
@@ -230,17 +224,12 @@
   }
 } */
 
-
-  
-  @media only screen and (max-width: 700px) {
-  
-    .navbar {
-      left: 0.5em; 
-    }
- 
-    .project-grid {
-      grid-template-columns: repeat(1, 1fr) !important;
-    }
-
-   
+@media only screen and (max-width: 700px) {
+  .navbar {
+    left: 0.5em;
   }
+
+  .project-grid {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
